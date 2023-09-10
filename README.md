@@ -16,3 +16,5 @@ Next, type ‘npx cypress open’ to open the test runner
 Cypress dialog box with ‘E2E Testing’ and ‘Component Testing’ options should be displayed
 Click on ‘E2E Testing’ option > select the browser and click on ‘Start E2E testing’
 Select the .feature spec in the Test runner to execute the Cypress test
+
+![image](https://github.com/karthick2637/karthick-test-exercise/assets/84224463/c687db74-7ac1-410e-a1b2-0ee54ba24e86)
