@@ -32,6 +32,7 @@ class CartPage {
             .eq(index)
             .click();
             cy.wait(2000)
+            return false;
         }
       });
     });

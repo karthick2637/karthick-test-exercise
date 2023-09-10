@@ -8,8 +8,12 @@ class LoginPage {
   addRandomProducts(count) {
     this.elements.addToCartBtn().then(($prdt) => {
       const products = Cypress._.map($prdt);
-      for (let i = 0; i < count; i++)
-        cy.get(products[Math.floor(Math.random() * products.length)]).click();
+      for (let i = 0; i < count; i++){
+        const randomItem = products[Math.floor(Math.random() * products.length)]
+        cy.get(randomItem).click();
+        const index = products.indexOf(randomItem)
+        const x = products.splice(index,1)
+      }
     });
   }
 }
